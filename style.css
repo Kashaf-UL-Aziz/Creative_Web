@@ -1,0 +1,184 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.bgimage {
+  background-image: url(./assets/pic1.avif);
+  background-position: center;
+  background-size: 110% 110%;
+  width: 100%;
+  height: 100vh;
+}
+
+.menu {
+  width: 100%;
+  height: 80px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.leftside {
+  width: 25%;
+  line-height: 80px;
+  float: left;
+}
+
+.leftside h4 {
+  padding-left: 70px;
+  font-weight: bold;
+  color: white;
+  font-size: 25px;
+}
+
+.rightside {
+  width: 75%;
+  height: 80px;
+  float: right;
+}
+
+.rightside ul {
+  margin-left: 200px;
+}
+
+.rightside ul li {
+  display: inline-block;
+  list-style: none;
+  color: white;
+  font-weight: bold;
+  line-height: 80px;
+  margin-left: 40px;
+  text-transform: uppercase;
+}
+
+#firstclass {
+  color: orange;
+}
+
+.rightside ul li:hover {
+  color: orange;
+}
+
+.main {
+  width: 100%;
+  margin-top: 185px;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+}
+
+.main h4 {
+  font-size: 14px;
+  font-family: "open sans", sans-serif;
+}
+
+.main h1 {
+  font-size: 60px;
+  font-family: "open sans", sans-serif;
+  font-weight: 700x;
+  margin: 14px 0px;
+}
+
+.main h3 {
+  font-size: 12px;
+  font-family: "open sans", sans-serif;
+}
+
+#btn1 {
+  background-color: white;
+  border: none;
+  border: 3px solid white;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 40px;
+  width: 150px;
+}
+
+#btn2 {
+  background-color: transparent;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  border: 3px solid white;
+  text-transform: uppercase;
+  line-height: 40px;
+  width: 150px;
+  margin-top: 25px;
+  color: white;
+}
+
+#btn1,
+#btn2:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .rightside ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin-left: 20px;
+    font-size: small;
+  }
+}
+
+@media (max-width: 963px) {
+  .rightside {
+    width: 100%;
+    height: 80px;
+    display: block;
+  }
+  .rightside ul {
+    margin-left: 0px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .rightside ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin-left: 20px;
+    font-size: small;
+  }
+
+  .leftside {
+    width: 100%;
+    line-height: 80px;
+    display: block;
+    text-align: center;
+    padding: 0 50px 0 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .rightside ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin-left: 5px;
+    font-size: xx-small;
+  }
+
+  .main h1 {
+    text-align: center;
+    font-size: 40px;
+  }
+  .main h3 {
+    text-align: center;
+    font-size: 10px;
+  }
+  .main h4 {
+    text-align: center;
+    font-size: 8px;
+  }
+  .leftside {
+    width: 100%;
+    line-height: 80px;
+    display: block;
+    text-align: center;
+    padding-right: 50px;
+  }
+  #btn1 {
+    margin-top: 20px;
+  }
+}
